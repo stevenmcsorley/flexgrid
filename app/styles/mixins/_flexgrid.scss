@@ -77,3 +77,8 @@
   }
 
 }
+
+@mixin innerNodes($number, $fixedRatio, $fluidRatio, $fixedWidth){
+  display:flex;
+
+}
