@@ -1,0 +1,153 @@
+// bower:scss
+// endbower
+@import 'mixins/_flexgrid.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+
+}
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.wrapper {
+  margin: 20px auto;
+  width: 90%;
+
+  h1
+  {
+    margin:8px 0px;
+  }
+}
+
+.call-it-what-you-want-six-cols {
+  @include bsndCols(6);
+  ul {
+    background: dodgerblue;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+.call-it-what-you-want-five-cols {
+  @include bsndCols(5, 8px);
+  ul {
+    background: #2dff70;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+.call-it-what-you-want-four-cols {
+  @include bsndCols(4, 8px);
+  ul {
+    background: #fff735;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+.call-it-what-you-want-three-cols {
+  @include bsndCols(3, 8px);
+  ul {
+    background: #ff6c20;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+.call-it-what-you-want-two-cols {
+  @include bsndCols(2, 8px);
+  ul {
+    background: #ff2766;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+.call-it-what-you-want-seven-cols {
+  @include bsndCols(7, 8px);
+  ul {
+    background: #6b32ff;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+.call-it-what-you-want-eight-cols {
+  @include bsndCols(8, 8px);
+  ul {
+    background: #48ffd1;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+.call-it-what-you-want-nine-cols {
+  @include bsndCols(9, 8px);
+  ul {
+    background: #4fff35;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+.call-it-what-you-want-ten-cols {
+  @include bsndCols(10, 8px);
+  ul {
+    background: #e4ff13;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+.call-it-what-you-want-eleven-cols {
+  @include bsndCols(11, 8px);
+  div {
+    background: #ff6f0e;
+    padding: 8px 4px;
+    column-fill: auto;
+  }
+}
+
+.call-it-what-you-want-twelve-cols {
+  @include bsndCols(12, 8px);
+  div {
+    background: #ff1b39;
+    padding: 8px 4px;
+    column-fill: auto;
+  }
+}
+
+.call-it-what-you-want-one-cols {
+  @include bsndCols(1, 8px);
+  ul {
+    background: #5b32ff;
+    li {
+      padding: 8px;
+    }
+  }
+}
+
+
+
+
+
