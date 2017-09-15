@@ -9,7 +9,6 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: $gap;
 
-
     /* Extra Small Devices, Phones */
     @media (min-width: 480px) {
       grid-template-columns: repeat(2, 1fr);
@@ -78,7 +77,14 @@
 
 }
 
-@mixin innerNodes($number, $fixedRatio, $fluidRatio, $fixedWidth){
-  display:flex;
+@mixin innerNodes($number, $pad: 8px, $fixedRatio: 1, $fluidRatio: 1, $fixedWidth: 50%) {
+  display: flex;
+  padding:$pad;
+  @for $i from 1 through $number {
+    div {
+      flex-grow: 1;
+
+    }
+  }
 
 }
