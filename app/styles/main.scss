@@ -61,10 +61,30 @@ body {
 
 .call-it-what-you-want-three-cols {
   @include bsndCols(3, 8px);
-  ul {
+  div
+  {
     background: #ff6c20;
+  }
+  ul {
+
     li {
       padding: 8px;
+    }
+  }
+  .two-inner-nodes
+  {
+    @include innerNodes(2, 8px);
+    div
+    {
+      background:green;
+    }
+  }
+  .three-inner-nodes
+  {
+    @include innerNodes(3);
+    div
+    {
+      background: #207e80;
     }
   }
 }
@@ -146,6 +166,8 @@ body {
     }
   }
 }
+
+
 
 
 
